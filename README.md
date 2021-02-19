@@ -45,7 +45,7 @@ It is a website where you will be able to estimate your future returns from vari
 <a name="contributors"></a>
 ## CONTRIBUTORS
 
-1. Garima Gupta garimagupta010303@gmail.com
+1. Garima Gupta https://github.com/garima010303
 2. Darshpreet Uppal 20bph004@nith.ac.in
 3. Prabal Panda mynameisprabalpanda@gmail.com
 4. Netaliya Ahmed na2238@srmist.edu.in
