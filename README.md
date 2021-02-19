@@ -18,7 +18,7 @@ Warren Buffett once said:
 
 1. [Description](#description)
 2. [Demo Link](#demo-link)
-3. Technologies Used(#tech-used)
+3. [Technologies Used](#tech-used)
 4. [How to use](#how-to-use)
 5. [Contributors](#contributors)
 6. [License](#license)
