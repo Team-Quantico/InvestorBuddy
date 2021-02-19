@@ -86,5 +86,5 @@ STEP3: GET YOUR PLAN.
 
 MIT License
 
- :copyright: Copyright 2021 Team-Quantico
+:copyright: Copyright 2021 Team-Quantico
 
