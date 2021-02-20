@@ -14,7 +14,7 @@ function sip() {
     var num = (roi / (100 * n) + 1) ** expt
     var deno = roi / (100 * n);
 
-    var X = (mi * (num-1) * (deno+1)) / deno
+    var X = (mi * (num - 1) * (deno + 1)) / deno
 
     var totalInvest = mi * (60 - tp) * 12;
     var intEarned = X - totalInvest;
