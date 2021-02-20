@@ -7,7 +7,7 @@
     <link href="sipcalculator.css" rel="stylesheet" />
 
 
-    <title>NPS Calculator</title>
+    <title>PPF Calculator</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,7 +31,9 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="sipcalculator.html">SIP Calculator</a></li>
                             <li><a class="dropdown-item" href="savingscalculator.html">Savings Calculator</a></li>
-                            <li><a class="dropdown-item" href="ppfcalculator.html">PPF Calculator</a></li>
+                            <li><a class="dropdown-item" href="npscalculator.html">NPS Calculator</a></li>
+                            
+
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -41,7 +43,7 @@
             </div>
         </div>
     </nav>
-    <p class="text-dark bg-light fs-1">NPS CALCULATOR</p>
+    <p class="text-dark bg-light fs-1">PPF CALCULATOR</p>
     <div class="container">
 
         <div class="row">
@@ -49,29 +51,52 @@
             <div class="col-4">
                 <div class="card border-dark bg-light">
                     <div class="card-body">
-                        <label for="mi" class="form-label fw-bold fs-6">Monthly Investments(in <span>&#8377;</span>)</label>
+                        <label for="mi" class="form-label fw-bold fs-6">Yearly Investments(in <span>&#8377;</span>)</label>
                         <div class="range-wrap my-3">
                             <div class="range-value" id="rangeV"></div>
-                            <input id="mi" type="range" min="500" max="100000" value="50000" step="500">
+                            <input id="mi" type="range" min="500" max="150000" value="50000" step="500">
                         </div>
-                        <label for="roi" class="form-label fw-bold fs-6">Expected Rate of Interest(in %)</label>
-                        <div class="range-wrap my-3">
-                            <div class="range-value" id="rangeW"></div>
-                            <input id="roi" type="range" min="8" max="15" value="11.5" step="0.5">
-                        </div>
-                        <label for="tp" class="form-label fw-bold fs-6">Age(in yrs)</label>
+                        <label for="tp" class="form-label fw-bold fs-6">Time Period(in yrs.)</label>
                         <div class="range-wrap my-3">
                             <div class="range-value" id="rangeX"></div>
-                            <input id="tp" type="range" min="18" max="59" value="39" step="1">
+                            <input id="tp" type="range" min="15" max="50" value="15" step="1">
                         </div>
+                        <label class="form-label fw-bold fs-6">Rate of Interest: <a class="text-decoration-underline">7.1%</a></label>
                         <div class="d-grid gap-2 col-6 mx-auto mb-2">
-                            <button class="btn btn-outline-dark" type="button" onclick="">SUBMIT</button>
+                            <button class="btn btn-outline-dark" type="button" onclick="ppf()">SUBMIT</button>
                         </div>
 
                         <p id="totalInvest" class="fst-italic fs-5"></p>
                         <p id="intEarned" class="fst-italic fs-5"></p>
-                        <p id="maturityAmount" class="fst-italic fs-5"></p>
-                        <p id="ex" class="fst-italic fs-5"></p>
+                        <p id="totalValue" class="fst-italic fs-5"></p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-4">
+                <div class="card border-dark bg-light">
+                    <div class="card-header text-white bg-dark text-center fs-5">Total Investments V/S Interest Earned</div>
+                    <div class="card-body">
+                        <!-- <button class="btn btn-outline-dark" type="button" onclick="drawChart()">Show Pie</button> -->
+                        <div id="donutchart"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card bg-light border-dark">
+                    <div class="card-header text-white bg-dark text-center fs-5">PUBLIC PROVIDENT FUNDS(PPF)</div>
+                    <div class="card-body">
+                        <p class="card-text fs-5 fst-italic text-center">The first step towards wealth management is accumulating savings. You will find a lot of options for savings accounts; however, look for the ones that guarantee substantial returns risk-free. PPF accounts are one of the most common features which come into the picture. PPF account refers to Public Provident fund account and is meant to invest your valuable capital.If you are a new employee or a responsible parent who wishes to save for the future, then PPF is ideal for you. Calculating the interest rates and returns on your PPF account turns a bit difficult. To make these difficult calculations easy, PPF account calculator can be used</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="ppfcalculator.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
