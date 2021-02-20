@@ -1,0 +1,206 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="sipcalculator.css" rel="stylesheet" />
+
+
+    <title>Third</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">InvestorBuddy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Calculators
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="savingscalculator.html">Savings Calculator</a></li>
+                            <li><a class="dropdown-item" href="sipcalculator.html">SIP Calculator</a></li>
+                            <li><a class="dropdown-item" href="ppfcalculator.html">PPF Calculator</a></li>
+                            <li><a class="dropdown-item" href="npscalculator.html">NPS Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#queries">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p class="text-dark bg-light fs-1 text-center">GET YOUR PLAN AT ONE CLICK</p>
+    <div class="container my-10">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-white" for = "th_ms">SALARY</span>
+                    <input type="text" id="th_ms" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter your Monthly Salary">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-white" for ="th_age">AGE</span>
+                    <input type="text" id="th_age" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter your Age">
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto mb-2">
+                    <button class="btn btn-dark text-white" type="button" onclick="th()">SUBMIT</button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="id" style="display: none;">
+
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="fs-4"><strong>ADVICE:</strong> Before investing save a decent amount, <strong>ATLEAST 5 TIMES YOUR SALARY</strong>, in your savings account as EMERGENCY FUNDS.</p>
+                <p class="fs-4"><strong>STEP-1:</strong> You can achieve this by saving <strong>40%</strong> of your salary every month for 1 year.</p>
+                <p class="fst-italic">*Assuming that your bank gives 4% annual interest on savings account.</p>
+                <p id="xyz" class="fw-bold fs-4 text-center"></p>
+                <p class="fs-4">
+                    <strong>ADVICE:</strong> Now as you have saved your Emergency Funds, its time to take <strong>RISKS</strong>.<br />Maintain a <strong>40:60 ratio between INVESTMENTS and EXPENSES</strong><br />.Use that 60% of your salary for day-to-day expenses or monthly bills or EMIs.<br />
+                    And invest the remaining 40% of salary to meet your LIFE GOALS and to enjoy RETIREMENT.<br />
+                </p>
+                <p class="fs-4"><strong>STEP-2:</strong> Put <strong>15%</strong> of your investing capital which is <strong>6%</strong> of your salary in <strong>SAVINGS ACCOUNT</strong> every month to meet SHORT-TERM GOALS.</p>
+                <p class="fs-4"><strong>STEP-3:</strong> Put <strong>70%</strong> of your investing capital which is <strong>28%</strong> of your salary in a <strong>Systematic Investment Plan(SIP)</strong> every month to meet MID-TERM or LONG-TERM GOALS.</p>
+                <p class="fs-4"><strong>STEP-4:</strong> Put <strong>70%</strong> of your investing capital which is <strong>28%</strong> of your salary in <strong>National Pension Schemes</strong> every month to meet RETIREMENT GOALS.</p>
+                <p class="fw-bold fs-4 text-center">Now have a look at your returns shown in the tables below.</p>
+                <p class="fs-4"><strong>ADVICE:</strong> As we age our risk taking apetite decreases. So it is advisable to shift to more safer investments options like FDs or increasing contributions in savings account from SIPs.<br />Change your investing ratios according your age or risk taking capacity and check your returns from our <strong>CALCULATORS</strong>.<br /> </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mt-10">
+            <div class="col-4">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark text-white text-center">SAVINGS RETURNS</div>
+                    <div class="card-body">
+                        <table class="table table-dark table-striped" id="sav_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No.</th>
+                                    <th scope="col">AFTER</th>
+                                    <th scope="col">VALUE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>5yrs</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>10yrs</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>15yrs</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>20yrs</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+                <div class="col-4">
+                    <div class="card border-dark">
+                        <div class="card-header bg-dark text-white text-center">SIP RETURNS</div>
+                        <div class="card-body">
+                            <table class="table table-dark table-striped" id="sip_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">S.No.</th>
+                                        <th scope="col">AFTER</th>
+                                        <th scope="col">VALUE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>5yrs</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>10yrs</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>15yrs</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>20yrs</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-dark">
+                        <div class="card-header bg-dark text-white text-center">NPS RETURNS</div>
+                        <div class="card-body">
+                            <table class="table table-dark table-striped" id="nps_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">S.No.</th>
+                                        <th scope="col">RETURNS</th>
+                                        <th scope="col">Value at Retirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Total Investments</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Maturity Amount</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Annuity Investments</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="third.js"></script>
+</body>
+
+</html>
