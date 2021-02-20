@@ -42,3 +42,63 @@
         </div>
     </nav>
     <p class="text-dark bg-light fs-1">SIP CALCULATOR</p>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-4">
+                <div class="card border-dark bg-light">
+                    <div class="card-body">
+                        <label for="mi" class="form-label fw-bold fs-6">Monthly Investments(in <span>&#8377;</span>)</label>
+                        <div class="range-wrap my-3">
+                            <div class="range-value" id="rangeV"></div>
+                            <input id="mi" type="range" min="500" max="100000" value="50000" step="500">
+                        </div>
+                        <label for="roi" class="form-label fw-bold fs-6">Expected Rate of Interest(in %)</label>
+                        <div class="range-wrap my-3">
+                            <div class="range-value" id="rangeW"></div>
+                            <input id="roi" type="range" min="1" max="15" value="8" step="0.5">
+                        </div>
+                        <label for="tp" class="form-label fw-bold fs-6">Time Period(in yrs.)</label>
+                        <div class="range-wrap my-3">
+                            <div class="range-value" id="rangeX"></div>
+                            <input id="tp" type="range" min="1" max="30" value="15" step="1">
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto mb-2">
+                            <button class="btn btn-outline-dark" type="button" onclick="sip()">SUBMIT</button>
+                        </div>
+
+                            <p id="totalInvest" class="fst-italic fs-5"></p>
+                            <p id="intEarned" class="fst-italic fs-5"></p>
+                            <p id="totalValue" class="fst-italic fs-5"></p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="card border-dark bg-light">
+                    <div class="card-header text-white bg-dark text-center fs-5">Total Investments V/S Interest Earned</div>
+                    <div class="card-body">
+                        <!-- <button class="btn btn-outline-dark" type="button" onclick="drawChart()">Show Pie</button> -->
+                        <div id="donutchart"></div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-4">
+                <div class="card bg-light border-dark">
+                    <div class="card-header text-white bg-dark text-center fs-5">Systematic Investment Plans(SIPs)</div>
+                    <div class="card-body">
+                        <p class="card-text fs-5 fst-italic text-center">Prospective investors can think that SIPs and mutual funds are the same. However, SIPs are merely a method of investing in mutual funds, the other method being a lump sum. A SIP calculator is a tool that helps you determine the returns you can avail when parking your funds in such investment tools. Systematic Investment Plan or SIP is a process of investing a fixed sum of money in mutual funds at regular intervals. SIPs usually allow you to invest weekly, quarterly, or monthly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="sipcalculator.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
