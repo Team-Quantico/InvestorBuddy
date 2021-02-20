@@ -128,12 +128,14 @@
 
     var ans = mc_nps*((( ((i_nps/(100*n))+1)**(n*T) -1) * ((i_nps/(100*n))+1))/(i_nps/(100*n)))
 
-    var ti_nps = mc_nps *12*T
+    var ti_nps = mc_nps * 12 * T
+    var ie_nps = ans * 1 - ti_nps*1 
     var ma_nps = 0.6*ans
     var ai_nps = 0.4*ans
 
-    document.getElementById('nps_table').rows[1].cells[2].innerHTML= Math.round(ti_nps)
-    document.getElementById('nps_table').rows[2].cells[2].innerHTML=  Math.round(ma_nps)
-    document.getElementById('nps_table').rows[3].cells[2].innerHTML=Math.round(ai_nps)
+    document.getElementById('nps_table').rows[1].cells[2].innerHTML = Math.round(ti_nps)
+    document.getElementById('nps_table').rows[2].cells[2].innerHTML = Math.round(ie_nps)
+    document.getElementById('nps_table').rows[3].cells[2].innerHTML=  Math.round(ma_nps)
+    document.getElementById('nps_table').rows[4].cells[2].innerHTML=Math.round(ai_nps)
 
 }
