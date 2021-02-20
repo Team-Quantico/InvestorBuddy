@@ -29,7 +29,7 @@ function sav() {
     } else if (toc == 'b') {
         var Xb = ia * trm1 + (mi * (trm2n / trm2d) * (1 + trm2d))
 
-        var temp = (mi * n * t)
+        var temp = (mi * n * tp)
         var totalInvest = (ia * 1) + temp;
         var intEarned = Xb - totalInvest;
         var totalValue = Xb;
