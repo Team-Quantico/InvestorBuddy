@@ -40,9 +40,7 @@ It is a website where you will be able to estimate your future returns from vari
 <a name="demo-link"></a>
 ## :paperclip: DEMO LINK
 
-1. Video Demo:
-
-2. Ppt link:
+1. Video Demo:https://drive.google.com/folderview?id=1tnfpm92xSi1x_2figRMZxAGk5-HC3oIz
 
 ---
 <a name="tech-used"></a>
