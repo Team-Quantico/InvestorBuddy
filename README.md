@@ -57,16 +57,24 @@ It is a website where you will be able to estimate your future returns from vari
 <a name="how-to-use"></a>
 ## :bulb: HOW TO USE
 
-STEP1: ADD REQUIRED FIELDS.
+STEP1: Clone this repository and open home.html, you will land on our homepage.
 
-STEP2: CHOOSE A SCHEME.
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/1.png)
 
-STEP3: GET YOUR PLAN.
+STEP2: Click on GET STARTED to learn why investing is important.
 
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/2.png)
 
+STEP3: Enter your month salary and age to get your plan and see your returns.
 
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/3.png) 
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/4.png)
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/5.png)
 
+STEP4: You can also check our calculators to estimate your returns from various schemes.
 
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/6.png)
+![alt text](https://github.com/Team-Quantico/InvestorBuddy/blob/main/7.png)
 
 
 ---
